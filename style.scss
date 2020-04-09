@@ -1,5 +1,6 @@
 $backgroundColor : #f2f2f2;
 $navBackground : #fff;
+$blackBorder : #0a0a0a;
 
 $htmlColor: #FD9494;
 $scssColor: #DAA1F9;
@@ -143,10 +144,10 @@ p{
     font-size: .9em;
     font-family: 'roboto';
     background-color: #fff;
-    border: 0.7px solid;
+    border: 1px solid;
     box-shadow: 0px 0px 0px 0px #fff;
 
-    transition: box-shadow .2s;
+    transition: box-shadow .1s;
 }
 .typeTab{
     border: .7px solid;
@@ -168,47 +169,79 @@ p{
 
 //Tabs
 
-.html{
+#html{
     border-color: $htmlColor;
 
     &:hover{
         box-shadow: 3px 3px 0px 0px $htmlColor;
     }
 }
-.scss{
+#scss{
     border-color: $scssColor;
 
     &:hover{
         box-shadow: 3px 3px 0px 0px $scssColor;
     }
 }
-.javaScript{
+#javaScript{
     border-color: $javaScriptColor;
 
     &:hover{
         box-shadow: 3px 3px 0px 0px $javaScriptColor;
     }
 }
-.reactJs{
+#reactJs{
     border-color: $reactJsColor;
 
     &:hover{
         box-shadow: 3px 3px 0px 0px $reactJsColor;
     }
 }
-.design{
+#design{
     border-color: $designColor;
 
     &:hover{
         box-shadow: 3px 3px 0px 0px $designColor;
     }
 }
-.showAll{
+#showAll{
     border-color: $showAllColor;
 
     &:hover{
         box-shadow: 3px 3px 0px 0px $showAllColor;
     }
+}
+
+.htmlActive{
+    border: 1.4px solid $blackBorder !important;
+    background-color: $htmlColor;
+    box-shadow: 3px 3px 0px 0px $htmlColor;
+    
+}
+.scssActive{
+    border: 1px solid $blackBorder !important;
+    background-color: $scssColor;
+    box-shadow: 3px 3px 0px 0px $scssColor;
+}
+.javaScriptActive{
+    border: 1px solid $blackBorder !important;
+    background-color: $javaScriptColor;
+    box-shadow: 3px 3px 0px 0px $javaScriptColor;
+}
+.reactJsActive{
+    border: 1px solid $blackBorder !important;
+    background-color: $reactJsColor;
+    box-shadow: 3px 3px 0px 0px $reactJsColor;
+}
+.designActive{
+    border: 1px solid $blackBorder !important;
+    background-color: $designColor;
+    box-shadow: 3px 3px 0px 0px $designColor;
+}
+.showAllActive{
+    border: 1px solid $blackBorder !important;
+    background-color: $showAllColor;
+    box-shadow: 3px 3px 0px 0px $showAllColor;
 }
 
 
