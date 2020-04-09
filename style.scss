@@ -1,7 +1,8 @@
 $backgroundColor : #f2f2f2;
 $navBackground : #fff;
-$blackBorder : #0a0a0a;
+$blackBorder : #fff;
 $menuBlue: #3e7be6;
+$menuCloseColor: #FF5656;
 
 $htmlColor: #FD9494;
 $scssColor: #DAA1F9;
@@ -92,7 +93,7 @@ p{
             &:hover{
                 .bar,
                 .halfBar{
-                    box-shadow: 2px 2px 0px 0px #3E7BE6;
+                    box-shadow: 2px 2px 0px 0px $menuCloseColor;
                 }
             }
 
@@ -116,25 +117,40 @@ p{
     width: 170px;
     height: auto;
     border-bottom: 4px solid $menuBlue;
-    display: flex;
-    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    right: -100%;
+    transition: right .2s;
 
     .menuClose{
-        .closeBar{
-            width: 22px;
-            height: 3px;
-            background: #000;
-            margin: 1px;
+        position: relative;
+        left: 128px;
+        top: 10px;
+        height: 20px;
+        width: 20px;
+
+        &:hover{
+            .botCross{
+                top: 1px;
+                left: 2px;
+            }
         }
-        .left{
-            transform: rotate(20deg);
+
+        .topCross{
+            position: absolute;
+            top: 0;
+            z-index: 1000;
         }
-        .right{
-            transform: rotate(45deg);
+        .botCross{
+            position:  absolute;
+            top: 0px;
+            left: 0px;
+            transition: all 0.2s;
         }
     }
     .menuContent{
         ul{
+            padding: 0 0 0 20px;
             list-style: none;
             li{
                 margin-bottom: 20px; 
@@ -144,6 +160,7 @@ p{
     .menuFooter{
         ul{
             @include flexRow();
+            align-items: center;
             list-style: none;
             margin: 30px 0 10px 0;
 
@@ -203,8 +220,7 @@ p{
     background-color: #fff;
     border: 1px solid;
     box-shadow: 0px 0px 0px 0px #fff;
-
-    transition: box-shadow .1s;
+    transition: all .1s;
 }
 .typeTab{
     border: .7px solid;
@@ -222,6 +238,11 @@ p{
     background: #3E7BE6;
     color: #fff;    
     font-family: 'roboto';
+}
+.menuButton{
+    border: none;
+    background: none;
+    font-size: 1em
 }
 
 //Gallery Tabs
@@ -289,32 +310,38 @@ p{
     border: 1.4px solid $blackBorder !important;
     background-color: $htmlColor;
     box-shadow: 3px 3px 0px 0px $htmlColor;
+    color: #fff;
     
 }
 .scssActive{
     border: 1px solid $blackBorder !important;
     background-color: $scssColor;
     box-shadow: 3px 3px 0px 0px $scssColor;
+    color: #fff;
 }
 .javaScriptActive{
     border: 1px solid $blackBorder !important;
     background-color: $javaScriptColor;
     box-shadow: 3px 3px 0px 0px $javaScriptColor;
+    color: #fff;
 }
 .reactJsActive{
     border: 1px solid $blackBorder !important;
     background-color: $reactJsColor;
     box-shadow: 3px 3px 0px 0px $reactJsColor;
+    color: #fff;
 }
 .designActive{
     border: 1px solid $blackBorder !important;
     background-color: $designColor;
     box-shadow: 3px 3px 0px 0px $designColor;
+    color: #fff;
 }
 .showAllActive{
     border: 1px solid $blackBorder !important;
     background-color: $showAllColor;
     box-shadow: 3px 3px 0px 0px $showAllColor;
+    color: #fff;
 }
 
 
