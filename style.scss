@@ -1,6 +1,7 @@
 $backgroundColor : #f2f2f2;
 $navBackground : #fff;
 $blackBorder : #0a0a0a;
+$menuBlue: #3e7be6;
 
 $htmlColor: #FD9494;
 $scssColor: #DAA1F9;
@@ -18,11 +19,15 @@ $showAllColor: #808080;
     display: flex;
     flex-direction: column;
 }
-@mixin flexRow{
+@mixin flexRowSbCenter{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
 }
 
 *{
@@ -53,8 +58,8 @@ p{
 //Main Wrapper
 .mainWrapper{
     width: 100vw;
+    min-width: 375px;
     height: auto;
-
     box-sizing: border-box;
     overflow: hidden;
     background: $backgroundColor;
@@ -71,7 +76,7 @@ p{
     @include flexCol();
 
     .menuNav{
-        @include flexRow();
+        @include flexRowSbCenter();
         padding-bottom: 7px;
         box-sizing: border-box;
 
@@ -84,16 +89,66 @@ p{
         .burgerMenu{
             height: auto;
 
+            &:hover{
+                .bar,
+                .halfBar{
+                    box-shadow: 2px 2px 0px 0px #3E7BE6;
+                }
+            }
+
             .bar{
                 height: 3px;
                 width: 22px;
                 background: #000;
                 margin-bottom: 6px;
+                transition: box-shadow .1s;
             }
             .halfBar{
                 height: 3px;
                 width: 11px;
                 background: #000;
+                transition: box-shadow .1s;
+            }
+        }
+    }
+}
+.menuWrapper{
+    width: 170px;
+    height: auto;
+    border-bottom: 4px solid $menuBlue;
+    display: flex;
+    flex-direction: column;
+
+    .menuClose{
+        .closeBar{
+            width: 22px;
+            height: 3px;
+            background: #000;
+            margin: 1px;
+        }
+        .left{
+            transform: rotate(20deg);
+        }
+        .right{
+            transform: rotate(45deg);
+        }
+    }
+    .menuContent{
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 20px; 
+            }
+        }
+    }
+    .menuFooter{
+        ul{
+            @include flexRow();
+            list-style: none;
+            margin: 30px 0 10px 0;
+
+            li{
+                margin-right: 20px;
             }
         }
     }
@@ -264,12 +319,12 @@ p{
 
 
 //Media Queries
-@media only screen and (max-width: 899px){
+@media only screen and (max-width: 927px){
     .wrapper{
         width: 47%;
     }
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 694px){
     .wrapper{
         width: 90%;
     }
