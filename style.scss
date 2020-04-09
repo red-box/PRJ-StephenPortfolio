@@ -1,9 +1,20 @@
 $backgroundColor : #f2f2f2;
+$navBackground : #fff;
 
 @mixin flexColCent{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+@mixin flexCol{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 *{
@@ -35,11 +46,47 @@ p{
 .mainWrapper{
     width: 100vw;
     height: auto;
-    padding: 0 14px;
+
     box-sizing: border-box;
     overflow: hidden;
     background: $backgroundColor;
     @include flexColCent();
+}
+
+//Navigation
+.navigation{
+    width: 100%;
+    height: 100px;
+    background: $navBackground;
+    padding: 20px 14px 10px 14px;
+    box-sizing: border-box;
+    @include flexCol();
+
+    .menuNav{
+        @include flexRow();
+
+        .logo{
+            font-family: "poppins";
+            font-size: 27px;
+            font-weight: 500;
+            margin  : 0;
+        }
+        .burgerMenu{
+            height: auto;
+
+            .bar{
+                height: 3px;
+                width: 22px;
+                background: #000;
+                margin-bottom: 6px;
+            }
+            .halfBar{
+                height: 3px;
+                width: 11px;
+                background: #000;
+            }
+        }
+    }
 }
 
 //Gallery
@@ -48,6 +95,7 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 5px 14px;
 }
 .wrapper{
     width: 31%;
