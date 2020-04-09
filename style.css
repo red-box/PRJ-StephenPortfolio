@@ -1,0 +1,147 @@
+* {
+  font-family: "Hind Madurai";
+  color: #0a0a0a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-family: 'Asap';
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  color: #000;
+}
+
+p {
+  margin: 5px 0 0 0;
+  font-weight: 400;
+  font-size: .9em;
+  font-family: 'roboto';
+  color: #000;
+}
+
+.mainWrapper {
+  width: 100vw;
+  height: auto;
+  padding: 0 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.galleryWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  width: 31%;
+  min-width: 280px;
+  margin: 10px;
+  background: #fff;
+  -webkit-box-shadow: 6px 6px 0px 0px #3E7BE6;
+          box-shadow: 6px 6px 0px 0px #3E7BE6;
+}
+
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper .content {
+  padding: 5px 10px;
+}
+
+.wrapper .btnWrapper {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper .btnWrapper .tagsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.typeTab {
+  border: .7px solid;
+  margin-left: 8px;
+  padding: 2px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: .8em;
+  font-family: 'roboto';
+}
+
+.visitSite2 {
+  width: 70px;
+  padding: 2px 2px;
+  font-size: .8em;
+  border: none;
+  background: #3E7BE6;
+  color: #fff;
+  font-family: 'roboto';
+}
+
+.scss {
+  border-color: #DAA1F9;
+}
+
+.javaScript {
+  border-color: #FD9494;
+}
+
+.html {
+  border-color: #9BC7F8;
+}
+
+@media only screen and (max-width: 899px) {
+  .wrapper {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

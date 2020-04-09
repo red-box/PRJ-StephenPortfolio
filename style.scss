@@ -1,0 +1,118 @@
+$backgroundColor : #f2f2f2;
+
+@mixin flexColCent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+*{
+    font-family: "Hind Madurai";
+    color: #0a0a0a;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+//Text
+h4{
+    font-family: 'Asap';
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+    color: #000;
+}
+p{
+    margin: 5px 0 0 0;
+    font-weight: 400;
+    font-size: .9em;
+    font-family: 'roboto';
+    color: #000;
+}
+
+//Main Wrapper
+.mainWrapper{
+    width: 100vw;
+    height: auto;
+    padding: 0 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: $backgroundColor;
+    @include flexColCent();
+}
+
+//Gallery
+.galleryWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper{
+    width: 31%;
+    min-width: 280px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 6px 6px 0px 0px #3E7BE6;
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .content{
+        padding: 5px 10px;
+    }
+    .btnWrapper{
+        width: 100%;
+        margin-top: 5px;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        .tagsWrapper{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+//Buttons & Tabs
+.typeTab{
+    border: .7px solid;
+    margin-left: 8px;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    font-size: .8em;
+    font-family: 'roboto';
+}
+.visitSite2{
+    width: 70px;
+    padding: 2px 2px;
+    font-size: .8em;
+    border: none;
+    background: #3E7BE6;
+    color: #fff;    
+    font-family: 'roboto';
+}
+
+//Tabs
+.scss{
+    border-color: #DAA1F9}
+.javaScript{
+    border-color: #FD9494}
+.html{
+    border-color: #9BC7F8}
+
+//Media Queries
+@media only screen and (max-width: 899px){
+    .wrapper{
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 650px){
+    .wrapper{
+        width: 90%;
+    }
+}
