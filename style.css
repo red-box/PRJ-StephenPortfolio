@@ -157,6 +157,24 @@ p {
           flex-direction: row;
 }
 
+.genreButton {
+  border: 0;
+  width: auto;
+  height: auto;
+  padding: 4px 10px;
+  margin-right: 7px;
+  font-size: .9em;
+  font-family: 'roboto';
+  background-color: #fff;
+  border: 0.7px solid;
+  -webkit-box-shadow: 0px 0px 0px 0px #fff;
+          box-shadow: 0px 0px 0px 0px #fff;
+  -webkit-transition: -webkit-box-shadow .2s;
+  transition: -webkit-box-shadow .2s;
+  transition: box-shadow .2s;
+  transition: box-shadow .2s, -webkit-box-shadow .2s;
+}
+
 .typeTab {
   border: .7px solid;
   margin-left: 8px;
@@ -177,16 +195,58 @@ p {
   font-family: 'roboto';
 }
 
+.html {
+  border-color: #FD9494;
+}
+
+.html:hover {
+  -webkit-box-shadow: 3px 3px 0px 0px #FD9494;
+          box-shadow: 3px 3px 0px 0px #FD9494;
+}
+
 .scss {
   border-color: #DAA1F9;
 }
 
-.javaScript {
-  border-color: #FD9494;
+.scss:hover {
+  -webkit-box-shadow: 3px 3px 0px 0px #DAA1F9;
+          box-shadow: 3px 3px 0px 0px #DAA1F9;
 }
 
-.html {
+.javaScript {
+  border-color: #3FBABB;
+}
+
+.javaScript:hover {
+  -webkit-box-shadow: 3px 3px 0px 0px #3FBABB;
+          box-shadow: 3px 3px 0px 0px #3FBABB;
+}
+
+.reactJs {
   border-color: #9BC7F8;
+}
+
+.reactJs:hover {
+  -webkit-box-shadow: 3px 3px 0px 0px #9BC7F8;
+          box-shadow: 3px 3px 0px 0px #9BC7F8;
+}
+
+.design {
+  border-color: #DAA1F9;
+}
+
+.design:hover {
+  -webkit-box-shadow: 3px 3px 0px 0px #DAA1F9;
+          box-shadow: 3px 3px 0px 0px #DAA1F9;
+}
+
+.showAll {
+  border-color: #808080;
+}
+
+.showAll:hover {
+  -webkit-box-shadow: 3px 3px 0px 0px #808080;
+          box-shadow: 3px 3px 0px 0px #808080;
 }
 
 @media only screen and (max-width: 899px) {
