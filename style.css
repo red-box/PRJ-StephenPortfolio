@@ -164,6 +164,19 @@ p {
   margin-bottom: 20px;
 }
 
+.menuWrapper .menuContent ul li button {
+  padding: 0;
+}
+
+.menuWrapper .menuFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .menuWrapper .menuFooter ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,11 +189,12 @@ p {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  margin: 30px 0 10px 0;
+  padding: 0;
+  margin: 30px 0 5px 0;
 }
 
-.menuWrapper .menuFooter ul li {
-  margin-right: 20px;
+.menuWrapper .menuFooter ul li:nth-child(2) {
+  margin: 0 26px;
 }
 
 .galleryWrapper {
