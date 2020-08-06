@@ -104,7 +104,7 @@ p {
 
 .navigation .menuNav .burgerMenu {
   height: auto;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .navigation .menuNav .burgerMenu:hover .bar,
@@ -135,7 +135,7 @@ p {
 }
 
 .menuWrapper {
-  width: 170px;
+  width: 155px;
   height: auto;
   border-bottom: 4px solid #3e7be6;
   background: #fff;
@@ -143,11 +143,12 @@ p {
   right: -100%;
   -webkit-transition: right .2s;
   transition: right .2s;
+  padding-right: 10px;
 }
 
 .menuWrapper .menuClose {
   position: relative;
-  left: 128px;
+  right: -73%;
   top: 10px;
   height: 20px;
   width: 20px;
@@ -183,6 +184,18 @@ p {
 
 .menuWrapper .menuContent ul li button {
   padding: 0;
+}
+
+.menuWrapper .menuContent .hoverHome:hover {
+  color: #FF5656;
+}
+
+.menuWrapper .menuContent .hoverAbout:hover {
+  color: #3FBABB;
+}
+
+.menuWrapper .menuContent .hoverContact:hover {
+  color: #3e7be6;
 }
 
 .menuWrapper .menuFooter {
@@ -434,6 +447,44 @@ p {
   -webkit-box-shadow: 3px 3px 0px 0px #808080;
           box-shadow: 3px 3px 0px 0px #808080;
   color: #fff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .iconWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .iconWrapper .socialMediaIcon {
+  min-width: 20px;
+  margin: 6px 6px 6px 5px;
+  padding-top: 5px;
 }
 
 @media only screen and (max-width: 927px) {
