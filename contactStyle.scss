@@ -1,0 +1,39 @@
+//Content Wrapper
+.contactMeWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 14px;
+}
+//Title
+.headerText{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+//Details
+.contactDetails{
+    display: flex;
+    justify-content: flex-start;
+
+    p{
+        margin: 0;
+    }
+
+    ul{
+        margin: 0;
+        list-style: none;
+    }
+}
+.contactForm{
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &:active{
+            
+        }
+    }
+}

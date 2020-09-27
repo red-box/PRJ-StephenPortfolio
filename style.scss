@@ -77,7 +77,6 @@ p{
     height: auto;
     box-sizing: border-box;
     overflow: hidden;
-    background: $backgroundColor;
     @include flexColCent();
 }
 
@@ -86,7 +85,7 @@ p{
     width: 100%;
     height: auto;
     background: $navBackground;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 38px 10px 38px;
     position: relative;
     box-sizing: border-box;
     @include flexCol();
@@ -390,12 +389,10 @@ p{
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
-    padding: 0 20px;
+    padding: 0 12px;
 
     p{
         margin: 0;
-    }
-    .copyWriteWrapper{
     }
     .iconWrapper{
         display: flex;
